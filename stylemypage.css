@@ -1,0 +1,125 @@
+h1 {
+  margin-top: 75px;
+  text-align: center;
+  color: black;
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 5px;
+}
+
+.namecontainer {
+  margin: 15px;
+  padding: 30px;
+  color: black;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#recent-work {
+  margin: 15px;
+  padding: 30px;
+  color: black;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#sm-work {
+  margin-left: 45px;
+  color: black;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#small-work {
+  margin: 15px;
+  padding: 30px;
+  color: black;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
+  padding: 5px; /* if you want space between the images */
+}
+
+.inside-text {
+  margin: 15px;
+  padding: 30px;
+  color: black;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.social-text {
+  margin-left: 45px;
+  color: black;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+img {
+  margin-left: 35px;
+  padding: 10px;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,1);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 5px;
+}
+
+
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
