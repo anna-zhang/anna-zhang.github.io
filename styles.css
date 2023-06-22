@@ -50,3 +50,58 @@ body {
     font-size: 0.6em;
     text-transform: uppercase;
 }
+
+#social-links ul {
+    padding: 0;
+}
+
+#social-links li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#body-text {
+    font-size: 0.8em;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* About */
+
+#overview p {
+    margin: 0;
+}
+
+#bio-text {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+#about-image {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+#social-links li::after {
+    content: " / ";
+}
+
+#social-links li:last-child::after {
+    content: "";
+}
+
+#social-links a {
+    text-decoration: none;
+    color: black;
+}
