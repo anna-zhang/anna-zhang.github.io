@@ -77,6 +77,8 @@ body {
 #bio-text {
     margin-top: 48px;
     margin-bottom: 48px;
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
 
 #about-image {
@@ -104,4 +106,22 @@ body {
 #social-links a {
     text-decoration: none;
     color: black;
+}
+
+td {
+    overflow-wrap: break-word;
+    hyphens: manual;
+    vertical-align: top;
+}
+
+#body-text h2 {
+    text-align: center;
+    font-size: 1.0em;
+    font-family: "Lexend Peta", sans-serif;
+    text-transform: uppercase;
+}
+
+#honors {
+    margin-top: 64px;
+    margin-bottom: 48px;
 }
