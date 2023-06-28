@@ -1,131 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Info | Anna Zhang</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-  <nav class="main-nav">
-    <ul>
-      <li><h1 style="margin: 0; font-weight: 400;"><a href="index.html" style="text-decoration-line: none; color: black;">Anna Zhang</a></h1></li>
-      <li><a href="info.html" style="text-decoration-line: none; color: black;">Info</a></li>
-    </ul>
-  </nav>
-  <div id="body-text">
-    <div id="about-image">
-        <img src="images/Anna_Zhang_Headshot.jpg" alt="Anna Zhang">
-      </div>
-    <div id="overview" class="center-text">
-        <p>Anna Zhang</p>
-        <p>(she/her)</p>
-        <p>b. 2001, New York, USA</p>
+  <i id="mobile-menu-button" class="bi bi-three-dots"></i>
+  <div class="container">
+    <div class="nav-column">
+        <h1><a href="index">Anna Zhang</a></h1>
+        <!-- Navigation Links -->
+        <div id="nav-content" class="full-menu">
+            <ul class="nav-links">
+                <li>Home</li>
+                <li>Work
+                    <ol class="work-title-list">
+                        <li>MIND</li>
+                        <li>Sincerely,</li>
+                        <li>Refract</li>
+                        <li>Brightlove</li>
+                    </ol>
+                </li>
+                <li>Info</li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.instagram.com/annazhang.studio/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                <a href="https://twitter.com/byannazhang" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+                <a href="https://github.com/anna-zhang" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/zhang-anna/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:annazhang.studio@gmail.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
     </div>
-    <div id="social-links" class="center-text">
-        <ul>
-            <li><a href="mailto:annazhang.studio@gmail.com">Email</a></li>
-            <li><a href="https://www.instagram.com/annazhang.studio/">Instagram</a></li>
-            <li><a href="https://twitter.com/byannazhang">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/zhang-anna/">LinkedIn</a></li>
-            <li><a href="https://github.com/anna-zhang">GitHub</a></li>
-        </ul>
+    <div class="featured-column">
+        <!-- About -->
+        <div id="info-overview">
+            <p>Anna Zhang</p>
+            <p>(she/her)</p>
+            <p>b. 2001, New York, USA</p>
+        </div>
+        <div id="bio-text">
+            <p>Anna Zhang is an artist whose work focuses on imaging and reimagining our relationships with technology. Her interests lay in new media, speculative fiction, games, creative tools, and digital accessibility.</p>
+            <p>Her projects include creating a fictional startup that explores the invisible labor underpinning technology, designing a mobile game that encourages positive actions and rewards kindness, and improving accessibility for America's open-source code platform.</p>
+            <p>Anna's work has been featured in various locations online (<i>Royal Photographic Journal</i>, <i>Real Life</i>, <i>New Media Caucus</i>, <i>Buzzfeed</i>, <i>Forbes</i>) and offline (<i>National Museum of American History</i>, <i>CICA</i>). She is a recipient of the Judson-Morrissey Excellence in New Media Award and was honored on the Forbes 30 Under 30 List. She also takes photographs and has been published in magazines like <i>Glamour</i> and <i>Porter</i>. 
+            </p>
+            <p>She holds a Bachelor of Arts in Computing and the Arts from Yale University.</p>
+        </div>
+        <div id="honors-container">
+            <button id="accordion-button"><h2 id="accordion-label">+ Select Exhibitions / Honors</h2></button>
+            <ul id="select-honors" style="display: none">
+                <li><i>Brightlove</i><br>Part of the <i>Girlhood (It's Complicated)</i> exhibition, 2021-2023<br>National Museum of American History<br>Washington, D.C., United States</li>
+                <li>Boao Young Leader<br>Award, 2022</li>
+                <li>“An Image, Reimagined”<br>Boao Youth Forum<br>Hainan Province, China (virtual)<br>Talk, 2022</li>
+                <li>“Anna Zhang: meet the Forbes 30 Under 30 artist”<br><i>The Royal Photographic Journal</i><br>Interview, 2022</li>
+                <li><i>Sincerely,</i> and <i>Refract</i><br>Part of the Judson-Morrissey Excellence in New Media Award exhibition, 2022<br>New Media Caucus, online</li>
+                <li>Judson-Morrissey Excellence in New Media Award, 2022</li>
+                <li><i>Refract</i><br>Part of the <i>Color 2022</i> exhibition<br>Czong Institute for Contemporary Art<br>Gyeonggi-do, Korea</li>
+                <li>Verge: Art and Activism<br>Georgetown University (virtual)<br>Keynote talk, 2021</li>
+                <li>Forbes 30 Under 30 (Art & Style, Youngest), 2021</li>
+                <li>“Meet The Teens Who Are Changing The Game”<br><i>BuzzFeed</i><br>Press, 2019</li>
+                <li>Google Play's Change the Game Design Challenge Grand Prize Winner, 2019</li>
+                <li>FOLIO Rising Star Award, 2018</li>
+                <li>Crain's New York Business 20 Under 20, 2017</li>
+            </ul>
+        </div>
     </div>
-    <div id="bio-text">
-        <p>Anna Zhang is an artist whose work focuses on imaging and reimagining our relationships with technology. Her interests lay in new media, speculative fiction, games, creative tools, and digital accessibility.</p>
-        <p>Her projects include creating a fictional startup that explores the invisible labor underpinning technology, designing a mobile game that encourages positive actions and rewards kindness, and improving accessibility for America's open-source code platform.</p>
-        <p>Anna's work has been featured in various locations online (<i>Royal Photographic Journal</i>, <i>Real Life</i>, <i>New Media Caucus</i>, <i>Buzzfeed</i>, <i>Forbes</i>) and offline (<i>National Museum of American History</i>, <i>CICA</i>). She is a recipient of the Judson-Morrissey Excellence in New Media Award and was honored on the Forbes 30 Under 30 List. She also takes photographs and has been published in magazines like <i>Glamour</i> and <i>Porter</i>. 
-        </p>
-        <p>She holds a Bachelor of Arts in Computing and the Arts from Yale University.</p>
-    </div>
-    <div id="honors">
-        <h2>Honors</h2>
-        <div id="projects-list">
-            <table class="full-width-table">
-              <colgroup>
-                <col style="width: 70%">
-                <col style="width: 20%">
-                <col style="width: 10%">
-              </colgroup>
-              <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Year</th>
-              </tr>
-              <tr>
-                <td><i>Brightlove</i>, part of the <i>Girlhood (It's Complicated)</i> exhibition, National Museum of American History, Washington, D.C., United States</td>
-                <td>Exhibition</td>
-                <td>2021-2023</td>
-              </tr>
-              <tr>
-                <td>Boao Young Leader</td>
-                <td>Award</td>
-                <td>2022</td>
-              </tr>
-              <tr>
-                <td>“An Image, Reimagined” @ Boao Youth Forum, Hainan Province, China (virtual)</td>
-                <td>Talk</td>
-                <td>2022</td>
-              </tr>
-              <tr>
-                <td>“Anna Zhang: meet the Forbes 30 Under 30 artist,” <i>The Royal Photographic Journal</i></td>
-                <td>Interview</td>
-                <td>2022</td>
-              </tr>
-              <tr>
-                <td><i>Sincerely,</i> and <i>Refract</i>, part of the Judson-Morrissey Excellence in New Media Award exhibition, New Media Caucus, online</td>
-                <td>Exhibition</td>
-                <td>2022</td>
-              </tr>
-              <tr>
-                <td>Judson-Morrissey Excellence in New Media Award</td>
-                <td>Award</td>
-                <td>2022</td>
-              </tr>
-              <tr>
-                <td><i>Refract</i>, part of the <i>Color 2022</i> exhibition, Czong Institute for Contemporary Art, Gyeonggi-do, Korea</td>
-                <td>Exhibition</td>
-                <td>2022</td>
-              </tr>
-              <tr>
-                <td>Verge: Art and Activism, Georgetown University (virtual)</td>
-                <td>Keynote Talk</td>
-                <td>2021</td>
-              </tr>
-              <tr>
-                <td>Forbes 30 Under 30 (Art & Style, Youngest)</td>
-                <td>Award</td>
-                <td>2021</td>
-              </tr>
-              <tr>
-                <td>“Meet The Teens Who Are Changing The Game,” <i>BuzzFeed</i></td>
-                <td>Press</td>
-                <td>2019</td>
-              </tr>
-              <tr>
-                <td>Google Play's Change the Game Design Challenge Grand Prize Winner</td>
-                <td>Award</td>
-                <td>2019</td>
-              </tr>
-              <tr>
-                <td>FOLIO Rising Star Award</td>
-                <td>Award</td>
-                <td>2018</td>
-              </tr>
-              <tr>
-                <td>Crain's New York Business 20 Under 20</td>
-                <td>Award</td>
-                <td>2017</td>
-              </tr>
-            </table>
-          </div>
-
-    </div>
-</div>
- 
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>

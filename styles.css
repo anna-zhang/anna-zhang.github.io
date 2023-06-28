@@ -1,127 +1,168 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    margin-left: 48px;
-    margin-right: 48px;
-    font-size: 1.5em;
-}
-
-/* Home */
-
-.main-nav {
-    margin-top: 36px;
-}
-
-.main-nav li {
-    list-style-type: none;
-    display: inline-block;
-}
-
-.main-nav ul {
-    display: flex;
-    justify-content: space-between;
+/* Overall */
+* {
     margin: 0;
     padding: 0;
-    align-items: flex-end;
+    box-sizing: border-box;
 }
 
-.hp-hero {
-    margin-top: 15vh;
-    margin-bottom: 15vh;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-image {
-    height: 100%;
-    object-fit: cover;
-}
-
-.full-width-table {
-    width: 100%;
-    table-layout: fixed;
-    text-align: left;
-    border-spacing: 0 1em;
-}
-
-.full-width-table th {
-    font-family: "Lexend Peta", sans-serif;
-    font-size: 0.6em;
-    text-transform: uppercase;
-}
-
-#social-links ul {
-    padding: 0;
-}
-
-#social-links li {
-    list-style-type: none;
-    display: inline-block;
-}
-
-#body-text {
-    font-size: 0.8em;
-}
-
-.center-text {
-    text-align: center;
-}
-
-/* About */
-
-#overview p {
-    margin: 0;
-}
-
-#bio-text {
-    margin-top: 48px;
-    margin-bottom: 48px;
-    margin-left: 20vw;
-    margin-right: 20vw;
-}
-
-#about-image {
-    margin-top: 48px;
-    margin-bottom: 48px;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#about-image img {
-    height: 100%;
-    object-fit: cover;
-}
-
-#social-links li::after {
-    content: " / ";
-}
-
-#social-links li:last-child::after {
-    content: "";
-}
-
-#social-links a {
+a {
     text-decoration: none;
     color: black;
 }
 
-td {
-    overflow-wrap: break-word;
-    hyphens: manual;
-    vertical-align: top;
+body {
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
+    font-family: "Manrope", sans-serif;
 }
 
-#body-text h2 {
-    text-align: center;
-    font-size: 1.0em;
-    font-family: "Lexend Peta", sans-serif;
+#mobile-menu-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+}
+
+/* First Column - Navigation */
+.nav-column {
+    flex: 30%;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 36px 48px 36px 48px;
+    line-height: 28px;
+}
+
+#nav-content.full-menu {
+    display: block;
+}
+
+.nav-links {
+    margin-top: 36px;
+    list-style: none;
+    margin-bottom: 36px;
+}
+
+.nav-links > li {
     text-transform: uppercase;
+    font-weight: 700;
 }
 
-#honors {
-    margin-top: 64px;
-    margin-bottom: 48px;
+.work-title-list {
+    list-style-type: number;
+    padding-left: 32px;
+    text-transform: none;
+    font-weight: 400;
+}
+
+/* Social Icons */
+.bi {
+    margin-right: 0.5em;
+}
+
+/* Second Column - Featured */
+.content-column {
+    flex: 70%;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 36px 48px 36px 48px;
+}
+
+/* Style for Images */
+.content-column img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Second Column - Featured */
+.featured-column {
+    flex: 70%;
+    overflow-y: auto;
+    height: 100vh;
+    padding: 36px 48px 36px 48px;
+}
+
+/* Featured – Images */
+.featured-column img {
+    display: block;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.featured-proj {
+    margin-bottom: 100px;
+}
+
+.col-1 {
+    margin-left: 0%;
+}
+.col-2 {
+    margin-left: 20%;
+}
+.col-3 {
+    margin-left: 60%;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .nav-column, .content-column, .featured-column {
+        flex: 100%;
+        height: auto;
+    }
+
+    .featured-column img {
+        width: 100%;
+    }
+
+    .col-1, .col-2, .col-3 {
+        margin-left: 0%;
+    }
+
+    #mobile-menu-button {
+        display: inline-block;
+    }
+
+    #nav-content.full-menu {
+        display: none;
+    }
+}
+
+/* Info – Bio */
+p {
+    margin-bottom: 1em;
+}
+
+#info-overview p {
+    margin-bottom: 0px;
+}
+
+#info-overview p:last-child {
+    margin-bottom: 1em;
+}
+
+#select-honors {
+    list-style: none;
+}
+
+#select-honors li {
+    margin-bottom: 0.5em;
+}
+
+#honors-container h2{
+    font-size: 1em;
+}
+
+#accordion-button {
+    margin-bottom: 14px;
+    background: none;
+    border: none;
+    font-size: 1em;
 }

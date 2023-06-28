@@ -1,68 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anna Zhang</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-  <nav class="main-nav">
-    <ul>
-      <li><h1 style="margin: 0; font-weight: 400;"><a href="index.html" style="text-decoration-line: none; color: black;">Anna Zhang</a></h1></li>
-      <li><a href="info.html" style="text-decoration-line: none; color: black;">Info</a></li>
-    </ul>
-  </nav>
-  <div class="hp-hero">
-    <img class="hero-image" src="projects/mind/images/MIND_2023_Installation_Anna_Zhang_1.jpg" alt="MIND installation">
+  <i id="mobile-menu-button" class="bi bi-three-dots"></i>
+  <div class="container">
+    <div class="nav-column">
+      <h1><a href="index">Anna Zhang</a></h1>
+      <!-- Navigation Links -->
+      <div id="nav-content" class="full-menu">
+          <ul class="nav-links">
+            <li>Home</li>
+            <li>Work
+                <ol class="work-title-list">
+                    <li>MIND</li>
+                    <li>Sincerely,</li>
+                    <li>Refract</li>
+                    <li>Brightlove</li>
+                </ol>
+            </li>
+            <li>Info</li>
+          </ul>
+          <div class="social-links">
+              <a href="https://www.instagram.com/annazhang.studio/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+              <a href="https://twitter.com/byannazhang" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+              <a href="https://github.com/anna-zhang" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/zhang-anna/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:annazhang.studio@gmail.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope"></i></a>
+          </div>
+      </div>
+    </div>
+    <div class="featured-column">
+        <!-- Featured Projects -->
+        <div class="featured-proj col-1">
+            <img src="projects/mind/images/MIND_2023_Installation_Anna_Zhang_1.jpg" alt="MIND installation">
+            <h2>MIND</h2>
+            <p>2023</p>
+        </div> 
+        <div class="featured-proj col-3">
+            <img src="projects/refract/Refract_1_Anna_Zhang.jpg" alt="Refract">
+            <h2>Refract</h2>
+            <p>2021</p>
+        </div>
+        <div class="featured-proj col-2">
+            <img src="projects/sincerely/Sincerely_Anna_Zhang.jpg" alt="Sincerely,">
+            <h2>Sincerely,</h2>
+            <p>2021</p>
+        </div>
+        <div class="featured-proj col-3">
+            <img src="projects/brightlove/Brightlove_Anna_Zhang.jpeg" alt="Brightlove">
+            <h2>Brightlove</h2>
+            <p>2019</p>
+        </div>
+    </div>
   </div>
-  <div id="projects-list">
-    <table class="full-width-table">
-      <colgroup>
-        <col style="width: 45%">
-        <col style="width: 45%">
-        <col style="width: 10%">
-      </colgroup>
-      <tr>
-        <th>Work</th>
-        <th>Type</th>
-        <th>Year</th>
-      </tr>
-      <tr>
-        <td>MIND</td>
-        <td>Studio</td>
-        <td>2023</td>
-      </tr>
-      <tr>
-        <td>ArtQuest</td>
-        <td>App</td>
-        <td>2023</td>
-      </tr>
-      <tr>
-        <td>Node</td>
-        <td>Design</td>
-        <td>2021</td>
-      </tr>
-      <tr>
-        <td>Sincerely,</td>
-        <td>Studio</td>
-        <td>2021</td>
-      </tr>
-      <tr>
-        <td>Refract</td>
-        <td>Studio</td>
-        <td>2021</td>
-      </tr>
-      <tr>
-        <td>Brightlove</td>
-        <td>App</td>
-        <td>2019</td>
-      </tr>
-    </table>
-  </div>
+  <script src="main.js"></script>
 </body>
 </html>
