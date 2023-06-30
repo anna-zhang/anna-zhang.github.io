@@ -10,6 +10,12 @@ a {
     color: black;
 }
 
+.styled-link {
+    text-decoration: dotted;
+    text-decoration-line: underline;
+    color: darkblue;
+}
+
 body {
     /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
     font-family: "Manrope", sans-serif;
@@ -107,6 +113,16 @@ body {
     margin-left: 60%;
 }
 
+.m-image {
+    width: 50%; 
+    height: auto;
+}
+
+.xl-image {
+    width: 100%; 
+    height: auto;
+}
+
 /* Mobile */
 @media screen and (max-width: 600px) {
     .container {
@@ -132,6 +148,11 @@ body {
 
     #nav-content.full-menu {
         display: none;
+    }
+
+    .m-image {
+        width: 100%; 
+        height: auto;
     }
 }
 
