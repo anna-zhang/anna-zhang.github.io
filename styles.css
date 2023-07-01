@@ -85,8 +85,6 @@ body {
 /* Style for Images */
 .content-column img {
     display: block;
-    width: 100%;
-    margin-bottom: 10px;
 }
 
 /* Second Column - Featured */
@@ -121,6 +119,7 @@ body {
 .m-image {
     width: 50%; 
     height: auto;
+    margin-bottom: 28px;
 }
 
 .xl-image {
