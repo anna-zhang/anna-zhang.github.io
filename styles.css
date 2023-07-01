@@ -16,6 +16,11 @@ a {
     color: darkblue;
 }
 
+.indented-list {
+    list-style-type: circle;
+    padding-left: 32px;
+}
+
 body {
     /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
     font-family: "Manrope", sans-serif;
@@ -182,6 +187,13 @@ p {
 }
 
 #accordion-button {
+    margin-bottom: 14px;
+    background: none;
+    border: none;
+    font-size: 1em;
+}
+
+#toggle-text-button {
     margin-bottom: 14px;
     background: none;
     border: none;

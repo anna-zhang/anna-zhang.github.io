@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIND, IPO Letter – Anna Zhang</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Redacted&display=swap" rel="stylesheet">
+</head>
+<body>
+  <i id="mobile-menu-button" class="bi bi-three-dots"></i>
+  <div class="container">
+    <div class="nav-column">
+      <h1><a href="index">Anna Zhang</a></h1>
+      <!-- Navigation Links -->
+      <div id="nav-content" class="full-menu">
+          <ul class="nav-links">
+            <li><a href="index">Home</a></li>
+            <li><a href="index">Work</a>
+                <ol class="work-title-list">
+                  <li><a href="mind">MIND</a></li>
+                  <li><a href="sincerely">Sincerely,</a></li>
+                  <li><a href="refract">Refract</a></li>
+                  <li><a href="brightlove">Brightlove</a></li>
+                </ol>
+            </li>
+            <li><a href="info">Info</a></li>
+          </ul>
+          <div class="social-links">
+              <a href="https://www.instagram.com/annazhang.studio/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+              <a href="https://twitter.com/byannazhang" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+              <a href="https://github.com/anna-zhang" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/zhang-anna/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:annazhang.studio@gmail.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope"></i></a>
+          </div>
+      </div>
+    </div>
+    <div class="featured-column">
+        <h2>MIND, IPO Letter</h2>
+        <p>Printer paper (8.5"x11"), 2023</p>
+        <br>
+        <p><i>MIND, IPO Letter</i> is part of <a href="mind" class="styled-link"><i>MIND</i></a>.</p>
+        <br>
+        <img src="projects/mind/mind_ipo_letter/MIND_IPO_Letter_Anna_Zhang.jpg" alt="MIND" class="m-image">
+        <button id="toggle-text-button"><h2 id="toggle-text-label" style="font-size: 1em;">+ IPO Letter Text</h2></button>
+        <div id="ipo-letter-text" style="display: none;">
+            <p>Dear Prospective Investors,</p>
+            <p>I am excited to introduce you to MIND, a company that is pioneering a new approach to entertainment and mental health. As the founder and CEO, it is my pleasure to invite you to join us on this journey as we move towards our initial public offering (IPO).</p>
+            <p>At MIND, we believe that memories are the key to happiness. Memories are what shape our identities and define who we are as individuals. That's why we've developed a revolutionary technology that allows us to edit memories, removing the negative emotions associated with them and leaving behind only the positive ones. Our mission is to help people live happier, more fulfilling lives by providing them with an escape from the pain and trauma that can come with difficult memories.</p>
+            <p>But MIND is more than just a company that offers a unique form of mental health support. We are also a company that is dedicated to bringing joy and happiness to people's lives. We understand that the modern world is full of stress and anxiety, and we believe that our technology can help people to escape from the daily grind and reconnect with the things that truly matter.</p>
+            <p>That's why we are excited to offer a new product, where sanitized memories can be purchased by others to make them happy. Our platform allows users to browse through a vast collection of sanitized memories, spanning a wide range of emotions and experiences, including but not limited to love, joy, success, and adventure, and to choose the ones that resonate with them. Our customers have reported feeling happier and more fulfilled after experiencing these positive memories. We believe that this service has the potential to revolutionize the entertainment industry, by offering a unique and personalized form of content that can make people truly happy. This new product has already been met with tremendous enthusiasm, and we are confident that it will be a key driver of our growth in the years to come.</p>
+            <p>As we move towards our IPO, we are excited about the opportunities that lie ahead. We plan to expand our services to new markets, develop new technologies, and invest in the growth of our company. We are confident that our unique approach to mental health and entertainment will continue to resonate with consumers, and that we will be able to build a sustainable, profitable business.</p>
+            <p>I would like to thank our dedicated team of professionals who have worked tirelessly to make MIND a reality. I would also like to express my gratitude to our investors, who have shown their support and confidence in our vision.</p>
+            <p>At MIND, we are committed to making the world a happier place. We believe that our technology can make a real difference in people's lives, by helping them to remember the things that truly matter. We are excited about the possibilities that the future holds, and we invite you to join us on this journey.</p>
+            <p>Sincerely,</p>
+            <p style="font-family: 'Redacted', cursive;">[REDACTED]</p>
+            <p>Founder and CEO of MIND</p>
+            <i>Text written by text generation AI.</i>
+        </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  <script>
+    const toggleTextButton = document.getElementById('toggle-text-button')
+    const toggleTextLabel = document.getElementById('toggle-text-label')
+    const ipoLetterText = document.getElementById('ipo-letter-text')
+    toggleTextButton.addEventListener('click', () => {
+    console.log('button clicked')
+    if (ipoLetterText.style.display == 'none') {
+        ipoLetterText.style.display = 'block'
+        toggleTextLabel.innerHTML = '- IPO Letter Text'
+    } else {
+        ipoLetterText.style.display = 'none'
+        toggleTextLabel.innerHTML = '+ IPO Letter Text'
+    }
+    })
+  </script>
+</body>
+</html>
